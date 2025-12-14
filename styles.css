@@ -415,12 +415,12 @@ button, .btn { -webkit-tap-highlight-color: transparent; }
     margin: 0 auto;
     padding: 4rem 2rem;
 }
-
-.content-box {
-    background: var(--surface);
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 6px 30px rgba(0,0,0,0.12);
++
++.screenshot-slot {
++    display: flex;
++    justify-content: center;
++    margin: 1.5rem 0 2rem 0;
++}
     border: 1px solid rgba(0,0,0,0.06);
 }
 
