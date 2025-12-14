@@ -127,6 +127,23 @@ body {
     display: block;
 }
 
+/* Show menu when JS toggles `open` class (for click interaction) */
+.nav-dropdown.open .nav-dropdown-menu {
+    display: block;
+    animation: fadeInDown 180ms ease both;
+}
+
+@keyframes fadeInDown {
+    from { transform: translateY(-6px); opacity: 0 }
+    to { transform: translateY(0); opacity: 1 }
+}
+
+.nav-dropdown > a[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+    display: inline-block;
+    transition: transform 160ms ease;
+}
+
 /* Hero Section */
 .hero-section {
     max-width: 1200px;
