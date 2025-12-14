@@ -11,7 +11,7 @@
     --surface-text: #0b0b0b;
     --accent-1: #ff6a00; /* primary orange */
     --accent-2: #ff8a33; /* lighter orange */
-    --surface-border: rgba(0,0,0,0.08);
+    --surface-border: rgba(0,0,0,0.16);
     --muted: #6b6b6b;
     --shadow: rgba(2,6,23,0.06);
 }
@@ -133,10 +133,10 @@ body {
 
 .glassy-card {
     background: var(--surface);
-    border: 1px solid rgba(0,0,0,0.06);
+    border: 1.5px solid var(--surface-border);
     border-radius: 12px;
     padding: 1rem;
-    box-shadow: 0 10px 30px rgba(2,6,23,0.08);
+    box-shadow: 0 10px 30px var(--shadow);
 }
 
 .hero-panel {
@@ -163,15 +163,21 @@ body {
 
 .device-mockup {
     width: 260px;
-    height: 180px;
+    height: auto;
+    min-height: 180px;
     border-radius: 12px;
-    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    background: var(--surface);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--muted);
     font-weight: 700;
+    border: 1.5px solid var(--surface-border);
+    overflow: hidden;
 }
+
+.panel-mockup img, .mockup img, .device-mockup img { max-width: 100%; height: auto; display: block; }
+
 
 
 /* Features */
@@ -187,7 +193,7 @@ body {
     padding: 1.4rem;
     border-radius: 12px;
     color: var(--surface-text);
-    border: 1px solid rgba(0,0,0,0.06);
+    border: 1.5px solid var(--surface-border);
     transition: transform 0.22s ease, box-shadow 0.18s ease;
 }
 
@@ -279,7 +285,7 @@ body {
     padding: 1rem 1.2rem;
     text-align: center;
     background: var(--surface);
-    border: 1px solid var(--surface-border);
+    border: 1.5px solid var(--surface-border);
     border-radius: 12px;
     box-shadow: 0 6px 20px var(--shadow);
 }
@@ -316,15 +322,20 @@ body {
 
 .mockup {
     width: 160px;
-    height: 320px;
+    height: auto;
+    min-height: 240px;
     border-radius: 18px;
-    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    background: var(--surface);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--muted);
     font-weight: 700;
+    border: 1.5px solid var(--surface-border);
+    overflow: hidden;
 }
+
+.mockup img { max-width: 100%; max-height: 320px; height: auto; display: block; }
 
 .section-title {
     color: var(--accent-1);
@@ -495,6 +506,11 @@ footer {
 
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-section { grid-template-columns: 1fr 320px; gap: 1.5rem; }
+    .device-content { grid-template-columns: 1fr 300px; }
+}
+
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
@@ -512,7 +528,7 @@ footer {
     }
 
     .tagline {
-        font-size: 1.2rem;
+        font-size: 1.05rem;
     }
 
     .features {
@@ -532,7 +548,8 @@ footer {
 
     .device-mockups { flex-direction: row; justify-content: center; }
 
-    .mockup { width: 120px; height: 240px; }
+    .mockup { width: 120px; min-height: 180px; }
 
     .metrics-container { flex-direction: column; gap: 1rem; align-items: stretch; }
 }
+
