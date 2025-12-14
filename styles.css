@@ -76,6 +76,8 @@ body {
 /* Dropdown menu for Platforms */
 .nav-dropdown {
     position: relative;
+    /* ensure the list item itself can be hovered without losing focus when moving to the menu */
+    display: inline-block;
 }
 
 .nav-dropdown > a::after {
@@ -86,17 +88,24 @@ body {
     color: var(--muted);
 }
 
+.nav-dropdown > a {
+    /* make the parent link a stable hover/focus target */
+    display: inline-block;
+    padding: 0.4rem 0.45rem;
+}
+
 .nav-dropdown-menu {
     display: none;
     position: absolute;
-    top: calc(100% + 8px);
+    /* remove the hover gap so pointer can move from parent to menu without leaving hover state */
+    top: 100%;
     left: 0;
     background: var(--surface);
     border: 1px solid var(--surface-border);
     border-radius: 6px;
     min-width: 160px;
     box-shadow: 0 12px 40px rgba(2,6,23,0.12);
-    padding: 0.4rem 0;
+    padding: 0.25rem 0;
     z-index: 1100;
 }
 
