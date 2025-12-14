@@ -7,7 +7,7 @@
 :root {
     --bg-dark: #070707;
     --bg-2: #0f0f0f;
-    --surface: #ffffff;
+    --surface: #f6f6f5; /* match logo background for seamless surfaces */
     --surface-text: #070707;
     --accent-1: #ff6a00; /* primary orange */
     --accent-2: #ff8a33; /* lighter orange */
