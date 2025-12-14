@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 812" width="375" height="812">
+  <rect rx="34" width="375" height="812" fill="#071027" />
+  <rect x="20" y="80" width="335" height="652" rx="18" fill="url(#g)" stroke="#0b1220" stroke-opacity="0.6" />
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#172033" />
+    </linearGradient>
+  </defs>
+  <g fill="#9fb4d6" font-family="sans-serif" font-weight="700" font-size="24">
+    <text x="32" y="130">iPhone screenshot placeholder</text>
+  </g>
+</svg>
