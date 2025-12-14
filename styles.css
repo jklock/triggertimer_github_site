@@ -5,19 +5,21 @@
 }
 
 :root {
-    --bg-1: #0f172a;
-    --accent-1: #667eea;
-    --accent-2: #764ba2;
-    --glass-bg: rgba(255,255,255,0.07);
-    --glass-border: rgba(255,255,255,0.12);
-    --muted: #adb5bd;
+    --bg-dark: #070707;
+    --bg-2: #0f0f0f;
+    --accent-1: #ff6a00; /* primary orange */
+    --accent-2: #ff8a33; /* lighter orange */
+    --glass-bg: rgba(255,255,255,0.04);
+    --glass-border: rgba(255,255,255,0.08);
+    --muted: #cfcfcf;
+    --text: #ffffff;
 }
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
-    color: #e6eef8;
-    background: linear-gradient(180deg, rgba(10,12,20,1) 0%, rgba(22,24,35,1) 100%);
+    color: var(--text);
+    background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-2) 100%);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
 }
@@ -89,7 +91,7 @@ body {
 
 .tagline {
     font-size: 1.25rem;
-    color: var(--accent-2);
+    color: var(--text);
     margin-bottom: 1rem;
     font-weight: 600;
 }
@@ -119,13 +121,13 @@ body {
 .btn-primary {
     background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
     color: white;
-    box-shadow: 0 10px 30px rgba(102,126,234,0.18);
+    box-shadow: 0 10px 30px rgba(255,106,0,0.12);
 }
 
 .btn-outline {
     background: transparent;
-    border: 2px solid rgba(255,255,255,0.08);
-    color: rgba(230,238,248,0.95);
+    border: 2px solid rgba(255,255,255,0.12);
+    color: var(--text);
 }
 
 .glassy-card {
@@ -151,13 +153,13 @@ body {
     position: absolute;
     top: 12px;
     right: 12px;
-    background: rgba(255,255,255,0.06);
-    color: white;
+    background: rgba(255,106,0,0.12);
+    color: var(--text);
     padding: 0.35rem 0.7rem;
     border-radius: 999px;
     font-weight: 700;
     font-size: 0.85rem;
-    border: 1px solid rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,106,0,0.18);
 }
 
 .device-mockup {
@@ -182,25 +184,29 @@ body {
 }
 
 .feature-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    padding: 2rem;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    padding: 1.6rem;
     border-radius: 15px;
-    color: white;
-    transition: transform 0.3s ease;
+    color: var(--text);
+    border: 1px solid rgba(255,255,255,0.04);
+    transition: transform 0.3s ease, box-shadow 0.18s ease;
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    box-shadow: 0 14px 40px rgba(0,0,0,0.6);
 }
 
 .feature-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+    color: var(--accent-1);
 }
 
 .feature-card p {
-    font-size: 1rem;
+    font-size: 0.98rem;
     line-height: 1.6;
+    color: var(--muted);
 }
 
 /* Platforms */
@@ -226,18 +232,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem 2rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    padding: 1.25rem 1.6rem;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    color: var(--text);
     text-decoration: none;
-    border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-width: 150px;
+    border-radius: 12px;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+    min-width: 140px;
+    border: 1px solid rgba(255,255,255,0.06);
 }
 
 .platform-btn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
 .platform-btn .icon {
@@ -273,11 +280,11 @@ body {
 .stat-value {
     font-size: 1.6rem;
     font-weight: 800;
-    color: white;
+    color: var(--text);
 }
 
 .stat-label {
-    color: rgba(230,238,248,0.8);
+    color: var(--muted);
     margin-top: 0.35rem;
 }
 
@@ -476,7 +483,8 @@ footer {
     align-items: center;
     gap: 1rem;
 }
-.footer-content a { color: rgba(230,238,248,0.95); text-decoration: none; font-weight:700; }
+.footer-content a { color: var(--text); text-decoration: none; font-weight:700; }
+.footer-content a:hover { color: var(--accent-1); }
 
 
 /* Responsive Design */
