@@ -62,11 +62,15 @@ body {
     gap: 2rem;
 }
 
+.nav-menu { align-items: center; }
+
 .nav-menu a {
     color: var(--text);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.18s ease;
+    display: inline-block; /* ensure consistent box sizing */
+    padding: 0.45rem 0; /* standardize vertical spacing for alignment */
 }
 
 .nav-menu a:hover {
@@ -89,9 +93,9 @@ body {
 }
 
 .nav-dropdown > a {
-    /* make the parent link a stable hover/focus target */
+    /* make the parent link a stable hover/focus target and inherit standard padding */
     display: inline-block;
-    padding: 0.4rem 0.45rem;
+    padding: 0.45rem 0.45rem;
 }
 
 .nav-dropdown-menu {
