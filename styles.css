@@ -9,8 +9,8 @@
     --text: #0b0b0b; /* primary page text */
     --surface: #ffffff; /* card / surface color */
     --surface-text: #0b0b0b;
-    --accent-1: #ff6a00; /* primary orange */
-    --accent-2: #ff8a33; /* lighter orange */
+    --accent-1: #0b0b0b; /* neutral accent (black) */
+    --accent-2: #444444; /* neutral accent (dark gray) */
     --surface-border: rgba(0,0,0,0.16);
     --muted: #6b6b6b;
     --shadow: rgba(2,6,23,0.06);
@@ -122,7 +122,7 @@ body {
 .btn-primary {
     background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
     color: #fff;
-    box-shadow: 0 8px 24px rgba(255,106,0,0.12);
+    box-shadow: 0 8px 24px rgba(2,6,23,0.12);
 }
 
 .btn-outline {
@@ -152,13 +152,13 @@ body {
     position: absolute;
     top: 12px;
     right: 12px;
-    background: rgba(255,106,0,0.12);
+    background: rgba(11,11,11,0.06);
     color: var(--text);
     padding: 0.35rem 0.7rem;
     border-radius: 999px;
     font-weight: 700;
     font-size: 0.85rem;
-    border: 1px solid rgba(255,106,0,0.18);
+    border: 1px solid rgba(11,11,11,0.10);
 }
 
 .device-mockup {
@@ -462,7 +462,7 @@ button, .btn { -webkit-tap-highlight-color: transparent; }
 ..form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--accent-1);
+    border-color: var(--text);
 }
 
 .form-group textarea {
@@ -471,8 +471,8 @@ button, .btn { -webkit-tap-highlight-color: transparent; }
 }
 
 .submit-btn {
-    background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
-    color: var(--text);
+    background: var(--text);
+    color: var(--page-bg);
     padding: 1rem 2rem;
     border: none;
     border-radius: 8px;
@@ -484,8 +484,8 @@ button, .btn { -webkit-tap-highlight-color: transparent; }
 
 .submit-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(255,106,0,0.18);
-
+    box-shadow: 0 10px 30px rgba(2,6,23,0.18);
+}
 /* Footer */
 footer {
     padding: 2rem;
