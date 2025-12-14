@@ -73,6 +73,47 @@ body {
     color: var(--accent-1);
 }
 
+/* Dropdown menu for Platforms */
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown > a::after {
+    content: "▾";
+    display: inline-block;
+    margin-left: 0.45rem;
+    font-size: 0.7rem;
+    color: var(--muted);
+}
+
+.nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    background: var(--surface);
+    border: 1px solid var(--surface-border);
+    border-radius: 6px;
+    min-width: 160px;
+    box-shadow: 0 12px 40px rgba(2,6,23,0.12);
+    padding: 0.4rem 0;
+    z-index: 1100;
+}
+
+.nav-dropdown-menu li { list-style: none; }
+.nav-dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--text);
+    font-weight: 600;
+}
+.nav-dropdown-menu a:hover { background: rgba(0,0,0,0.03); }
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+    display: block;
+}
+
 /* Hero Section */
 .hero-section {
     max-width: 1200px;
