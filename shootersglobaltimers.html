@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SG Global Timers - Trigger Timer</title>
+    <link rel="stylesheet" href="styles.css?v=20251214">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="color: inherit; text-decoration: none; display:flex; align-items:center; gap:10px;">
+                    <img src="img/TriggerTraceAppLogoBase.png" alt="Trigger Timer logo" style="height:36px; width:auto; display:block;" />
+                    <span>Trigger Timer</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="features.html">Features</a></li>
+                <li><a href="user-guide.html">User Guide</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Platforms</a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="ios.html">iOS</a></li>
+                        <li><a href="ipados.html">iPadOS</a></li>
+                        <li><a href="watchos.html">WatchOS</a></li>
+                    </ul>
+                </li>
+                <li><a href="shootersglobaltimers.html">SG Global Timers</a></li>
+                <li><a href="index.html#tour">Platform tour</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        <div class="content-box">
+            <h1>Shooter's Global Shot Timer Integration</h1>
+
+            <p>
+                Trigger Timer talks directly to SG timers over BLE: it streams shots in real time, pushes/pulls PAR setups, and keeps logging offline so every rep is captured even if the link drops.
+            </p>
+
+            <div class="page-hero">
+                <div class="hero-copy"></div>
+                <div class="hero-media" role="img" aria-label="SG timer device photo">
+                    <img src="img/sg_go.jpg" alt="SG timer device" class="device-photo-img" loading="lazy" />
+                </div>
+            </div>
+
+            <h2>Features</h2>
+            <ul>
+                <li><strong>BLE pairing & discovery:</strong> Scan, pair, and reconnect automatically; see signal and battery status.</li>
+                <li><strong>PAR control:</strong> Push/pull PAR, start delay, and shot limits from the app—no button fiddling mid-drill.</li>
+                <li><strong>Live shot streaming:</strong> Real trigger pulls become per-shot timestamps and cadence in your session.</li>
+                <li><strong>Offline failover:</strong> If BLE drops, the session keeps logging locally and backfills when reconnected.</li>
+                <li><strong>Multi-device aware:</strong> Connect more than one timer; the session notes which device produced which shots.</li>
+                <li><strong>Session archives:</strong> Shots + drill context + device metadata, exportable to CSV/JSON for coaches.</li>
+            </ul>
+
+            <h2>Supported Models</h2>
+            <p>
+                Works with Shooter's Global timers that expose BLE shot data (including current SG BLE models such as SG Go). If you have another SG model with BLE, reach out—I’ll verify and add it to the list.
+            </p>
+
+            <h2>Getting Started</h2>
+            <ol>
+                <li>Turn on the SG timer and open Devices in Trigger Timer.</li>
+                <li>Select your timer, confirm PAR settings, and start a drill.</li>
+                <li>Shoot—splits stream live. If the link drops, keep shooting; the app keeps timing and backfills when the timer returns.</li>
+            </ol>
+
+            <h2>If BLE drops</h2>
+            <ul>
+                <li>The session continues with local timing so you don’t lose reps.</li>
+                <li>Reopen Devices to reconnect; the app syncs shot data and reconciles timestamps.</li>
+                <li>Exports include which shots came from SG vs local, so you can audit if needed.</li>
+            </ul>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="index.html" class="platform-btn">← Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Trigger Timer. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -35,10 +35,10 @@ The contact form in `contact.html` requires setup:
 ## Pages Included
 
 - `index.html` - Main landing page
-- `sg-timers.html` - Shooter's Global Shot Timer integration
-- `apple-watch.html` - Apple Watch features
-- `iphone.html` - iPhone app details
-- `ipad.html` - iPad app features
+- `shootersglobaltimers.html` - Shooter's Global Shot Timer integration
+- `watchos.html` - Apple Watch features
+- `ios.html` - iPhone app details
+- `ipados.html` - iPad app features
 - `contact.html` - Contact form and information
 - `styles.css` - Responsive styling
 
