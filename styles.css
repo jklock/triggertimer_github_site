@@ -486,12 +486,12 @@ button, .btn { -webkit-tap-highlight-color: transparent; }
     margin: 0 auto;
     padding: 4rem 2rem;
 }
-+
-+.screenshot-slot {
-+    display: flex;
-+    justify-content: center;
-+    margin: 1.5rem 0 2rem 0;
-+}
+
+.screenshot-slot {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0 2rem 0;
+}
 
 /* Reusable page hero for subpages */
 .page-hero {
@@ -525,8 +525,6 @@ button, .btn { -webkit-tap-highlight-color: transparent; }
 @media (max-width: 768px) {
     .page-hero { grid-template-columns: 1fr; }
     .hero-media { height: 220px; }
-}
-    border: 1px solid rgba(0,0,0,0.06);
 }
 
 .content-box h1 {
@@ -677,4 +675,3 @@ footer {
 
     .metrics-container { flex-direction: column; gap: 1rem; align-items: stretch; }
 }
-
