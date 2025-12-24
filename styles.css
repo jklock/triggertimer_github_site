@@ -187,7 +187,7 @@ body {
     border-radius: 5px;
     text-decoration: none;
     font-weight: 700;
-    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    transition: box-shadow 0.18s ease, background-color 0.18s ease;
 }
 
 .btn-primary {
@@ -285,11 +285,11 @@ body {
     border-radius: 6px;
     color: var(--surface-text);
     border: 1.5px solid var(--surface-border);
-    transition: transform 0.22s ease, box-shadow 0.18s ease;
+    transition: box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
 .feature-card:hover {
-    transform: translateY(-6px);
+    transform: none;
     box-shadow: 0 14px 30px rgba(0,0,0,0.12);
 }
 
@@ -333,17 +333,17 @@ body {
     color: var(--surface-text);
     text-decoration: none;
     border-radius: 5px;
-    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    transition: box-shadow 0.18s ease, border-color 0.18s ease;
     min-width: 140px;
     border: 1px solid rgba(0,0,0,0.06);
 }
 
-.platform-btn:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
+.platform-btn:hover { transform: none; box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
 
 .platform-btn .icon { color: var(--accent-1); }
 
 .platform-btn:hover {
-    transform: translateY(-4px);
+    transform: none;
     box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
@@ -472,8 +472,8 @@ body {
 }
 
 /* Hover states */
-.btn:hover { transform: translateY(-3px); }
-.glassy-card:hover { transform: translateY(-6px); }
+.btn:hover { transform: none; box-shadow: 0 8px 24px rgba(2,6,23,0.12); }
+.glassy-card:hover { transform: none; box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
 
 /* Cross-browser friendly tweaks */
 button, .btn { -webkit-tap-highlight-color: transparent; }
@@ -602,11 +602,11 @@ button, .btn { -webkit-tap-highlight-color: transparent; }
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    transition: box-shadow 0.18s ease, background-color 0.18s ease;
 }
 
 .submit-btn:hover {
-    transform: translateY(-2px);
+    transform: none;
     box-shadow: 0 10px 30px rgba(2,6,23,0.18);
 }
 /* Footer */
