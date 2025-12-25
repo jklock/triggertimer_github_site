@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trigger Timer for Apple Watch: Haptic countdowns, motion-start draw detection, heart rate tracking, complications, and wrist-only training with iPhone sync.">
     <title>WatchOS - Trigger Timer</title>
     <link rel="stylesheet" href="styles.css?v=20251214">
 </head>
@@ -49,12 +50,20 @@
 
             <h2>Features</h2>
             <ul>
-                <li><strong>Haptics first:</strong> 3-2-1 countdown, PAR warnings, and drill complete signals you can feel.</li>
-                <li><strong>Motion start:</strong> Draw-motion detection kicks off timing when you clear leather—no taps required.</li>
-                <li><strong>Quick stats:</strong> Shot count, cadence, and timer state at a glance; complication/Live Activity launches your preset.</li>
-                <li><strong>Heart rate awareness:</strong> Track HR across drills to see how stress shifts your splits.</li>
+                <li><strong>Haptics first:</strong> 3-2-1 countdown, PAR warnings, and drill complete signals with adjustable intensity (subtle/balanced/assertive).</li>
+                <li><strong>Motion start:</strong> Draw-motion detection via CoreMotion accelerometer kicks off timing when you clear leather—no taps required.</li>
+                <li><strong>Quick stats:</strong> Shot count, cadence, and timer state at a glance; WidgetKit complications launch your preset.</li>
+                <li><strong>Heart rate monitoring:</strong> HealthKit integration tracks HR across drills to see how stress shifts your splits.</li>
+                <li><strong>Beep sync:</strong> Precise timing sync with SG Timer using beep detection timestamps for accurate shot data.</li>
+                <li><strong>Wrist-side aware:</strong> Mic sensitivity adjusts based on left/right wrist position for better beep detection.</li>
+                <li><strong>Bidirectional settings:</strong> Haptics, draw detection, HR monitoring, and mic sensitivity sync between Watch and iPhone.</li>
                 <li><strong>Offline capable:</strong> Run from the wrist alone; the session syncs back to iPhone/iPad when you reconnect.</li>
             </ul>
+
+            <h2>Complications</h2>
+            <p>
+                WidgetKit-based complications for quick launch from your watch face: accessoryCircular, accessoryCorner, accessoryInline, and accessoryRectangular families supported.
+            </p>
 
             <h2>How to run from the wrist</h2>
             <p>
