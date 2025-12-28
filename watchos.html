@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Trigger Timer for Apple Watch: Haptic countdowns, motion-start draw detection, heart rate tracking, complications, and wrist-only training with iPhone sync.">
-    <title>WatchOS - Trigger Timer</title>
+    <meta name="description" content="Control timers from your wrist: haptic countdowns, glanceable splits, and low‑interaction starts so you stay focused on training.">
+    <title>Watch - TriggerTimer</title>
     <link rel="stylesheet" href="styles.css?v=20251214">
 </head>
 <body>
@@ -12,8 +12,8 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="index.html" style="color: inherit; text-decoration: none; display:flex; align-items:center; gap:10px;">
-                    <img src="img/TriggerTraceAppLogoBase.png" alt="Trigger Timer logo" style="height:36px; width:auto; display:block;" />
-                    <span>Trigger Timer</span>
+                    <img src="img/TriggerTraceAppLogoBase.png" alt="TriggerTimer logo" style="height:36px; width:auto; display:block;" />
+                    <span>TriggerTimer</span>
                 </a>
             </div>
             <ul class="nav-menu">
@@ -25,7 +25,6 @@
                         <li><a href="ios.html">iOS</a></li>
                         <li><a href="ipados.html">iPadOS</a></li>
                         <li><a href="watchos.html">WatchOS</a></li>
-                        <li><a href="airpods.html">AirPods</a></li>
                         <li class="dropdown-divider" role="separator" aria-hidden="true"></li>
                         <li class="dropdown-header" aria-hidden="true">3rd‑party devices</li>
                         <li><a href="shootersglobaltimers.html">SG Timer (SG GO)</a></li>
@@ -39,49 +38,25 @@
 
     <main class="content">
         <div class="content-box">
-            <h1>⌚ WatchOS — Fast-Start Control Surface</h1>
+            <h1>Watch — Control from your wrist</h1>
 
-            <p>
-                The Watch companion is a fast-start control surface: start and stop drills, feel countdowns and PAR warnings, and glance at shot counts without touching your phone.
-            </p>
+            <p>Control timers without touching your phone. Haptic cues and glanceable splits keep you focused where it matters.</p>
 
             <div class="screenshot-slot">
                 <div class="mockup watch">
-                    <img class="device-image" src="img/screenshot-watch.svg" alt="Apple Watch session controls and haptic countdown" loading="lazy" />
+                    <img class="device-image" src="img/screenshots/watch/watch-active.png" alt="Watch active timer showing recent split and haptic indicator." loading="lazy" />
                 </div>
             </div>
 
-            <h2>Features</h2>
+            <h2>What you get</h2>
             <ul>
-                <li><strong>Haptics first:</strong> 3-2-1 countdown, PAR warnings, and drill complete signals with adjustable intensity (subtle/balanced/assertive).</li>
-                <li><strong>Motion start:</strong> Draw-motion detection via CoreMotion accelerometer kicks off timing when you clear leather—no taps required.</li>
-                <li><strong>Quick stats:</strong> Shot count, cadence, and timer state at a glance; WidgetKit complications launch your preset.</li>
-                <li><strong>Heart rate monitoring:</strong> HealthKit integration tracks HR across drills to see how stress shifts your splits.</li>
-                <li><strong>Beep sync:</strong> Precise timing sync with SG Timer using beep detection timestamps for accurate shot data.</li>
-                <li><strong>Wrist-side aware:</strong> Mic sensitivity adjusts based on left/right wrist position for better beep detection.</li>
-                <li><strong>Bidirectional settings:</strong> Haptics, draw detection, HR monitoring, and mic sensitivity sync between Watch and iPhone.</li>
-                <li><strong>Offline capable:</strong> Run from the wrist alone; the session syncs back to iPhone/iPad when you reconnect.</li>
+                <li><strong>Haptic countdowns:</strong> Feel 3‑2‑1 starts, PAR warnings, and completion taps on your wrist.</li>
+                <li><strong>One‑tap controls:</strong> Start, stop, and mark shots quickly from the watch face.</li>
+                <li><strong>Glanceable splits:</strong> See recent split times and counts at a glance.</li>
+                <li><strong>Low‑interaction mode:</strong> Minimal UI so you stay focused on the shot.</li>
+                <li><strong>Works with AirPods:</strong> Audio cues can route through your iPhone to AirPods for private feedback.</li>
+                <li><strong>Run wrist‑only:</strong> Use the watch standalone; sessions appear on your phone when devices reconnect.</li>
             </ul>
-
-            <h2>Complications</h2>
-            <p>
-                WidgetKit-based complications for quick launch from your watch face: accessoryCircular, accessoryCorner, accessoryInline, and accessoryRectangular families supported.
-            </p>
-
-            <h2>How to run from the wrist</h2>
-            <p>
-                Launch from the complication, feel the haptic countdown, run the drill, and stop on the watch. If BLE is out of range, the watch keeps logging; your phone pulls the data once you’re back near it.
-            </p>
-
-            <h2>Compatibility</h2>
-            <p>
-                Built for modern Apple Watch hardware running recent watchOS releases.
-            </p>
-
-            <h2>Convenience at Your Wrist</h2>
-            <p>
-                At the range or in the garage, you can launch drills, feel cues, and check stats without pulling out your phone. Your training history stays in sync once devices are back together.
-            </p>
 
             <div style="text-align: center; margin-top: 3rem;">
                 <a href="index.html" class="platform-btn">← Back to Home</a>

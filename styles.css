@@ -169,7 +169,7 @@ body {
 }
 
 .hero-copy h1 {
-    font-size: 3rem;
+    font-size: clamp(28px, 5vw, 44px);
     color: var(--accent-1);
     margin-bottom: 0.5rem;
 }
@@ -192,6 +192,12 @@ body {
     display: flex;
     gap: 1rem;
     align-items: center;
+}
+
+/* Prevent CTA labels from wrapping in the hero */
+.hero-ctas .btn {
+    min-width: 140px;
+    text-align: center;
 }
 
 .btn {
@@ -316,6 +322,8 @@ body {
     font-size: 0.98rem;
     line-height: 1.6;
     color: #444;
+    hyphens: auto;
+    word-break: break-word;
 }
 
 /* Platforms */
