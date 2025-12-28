@@ -548,6 +548,11 @@ button, .btn { -webkit-tap-highlight-color: transparent; }
     .hero-media { height: 220px; }
 }
 
+/* Minor accessibility and truncation fixes */
+.hero-copy h1 { line-height: 1.05; }
+.feature-card h3 { white-space: normal; line-height: 1.15; }
+.btn-primary:focus, .btn-outline:focus { outline: 3px solid #005fcc; outline-offset: 2px; }
+
 .content-box h1 {
     color: var(--surface-text);
     margin-bottom: 0.9rem;
